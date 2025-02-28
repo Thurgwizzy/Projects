@@ -1,0 +1,11 @@
+--2024-11-09 04:23:18--  https://cpanmin.us/
+Resolving cpanmin.us (cpanmin.us)... 151.101.2.217, 151.101.130.217, 151.101.194.217, ...
+Connecting to cpanmin.us (cpanmin.us)|151.101.2.217|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 302123 (295K) [text/plain]
+Saving to: ‘STDOUT’
+
+-                   0%[           ]       0  --.-KB/s               -                 100%[==========>] 295.04K  --.-KB/s    in 0.03s   
+
+2024-11-09 04:23:18 (8.64 MB/s) - written to stdout [302123/302123]
+

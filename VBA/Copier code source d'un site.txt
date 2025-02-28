@@ -1,0 +1,21 @@
+Public Function ExtraireSourceHTML(LienURL As String)
+On Error GoTo ExtraireSourceHTMLErreur
+ 
+  With CreateObject("MSXML2.XMLHTTP")
+    .Open "GET", LienURL, False
+    .Send
+      If .ReadyState = 4 Then
+        If .Status <> 200 Then
+            ExtraireSourceHTML = CVErr(xlErrNA)
+        Else
+            ExtraireSourceHTML = .ResponseText
+        End If
+      Else
+        ExtraireSourceHTML = CVErr(xlErrNA)
+      End If
+  End With
+  
+Exit Function
+ExtraireSourceHTMLErreur:
+ExtraireSourceHTML = CVErr(xlErrNA)
+End Function

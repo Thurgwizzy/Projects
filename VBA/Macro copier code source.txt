@@ -1,0 +1,15 @@
+Sub ExempleExtractionHTML()
+    On Error GoTo ExempleErreur
+ 
+Dim MonLienURL As String
+MonLienURL = "https://fr.wikipedia.org" '<-- placez ici votre lien
+CodeHTML = ExtraireSourceHTML(MonLienURL)
+ 
+'votre code pour traiter les données obtenues
+MsgBox "Apperçu du code HTML de " & MonLienURL & ":" & Chr(13) & Chr(10) & Chr(13) & Chr(10) & _
+Left(CodeHTML, 350) '= exemple: affiche un message avec les premiers 350 caractères du code HTML
+ 
+Exit Sub
+ExempleErreur:
+    MsgBox "Une erreur est survenue..."
+End Sub
